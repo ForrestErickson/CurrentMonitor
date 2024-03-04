@@ -630,6 +630,9 @@
   (junction (at 58.42 88.9) (diameter 0) (color 0 0 0 0)
     (uuid 4a1e853c-862d-4804-a6b9-68761f602f5c)
   )
+  (junction (at 108.585 95.885) (diameter 0) (color 0 0 0 0)
+    (uuid 4e54d43b-12c4-479d-a440-5edffe17554f)
+  )
   (junction (at 201.295 104.775) (diameter 0) (color 0 0 0 0)
     (uuid 53577d6e-06b3-4d8c-a862-44e369ea91a0)
   )
@@ -677,6 +680,9 @@
   )
   (junction (at 181.61 130.175) (diameter 0) (color 0 0 0 0)
     (uuid d1da2311-421d-48ca-bcd1-24041ec937de)
+  )
+  (junction (at 181.61 95.885) (diameter 0) (color 0 0 0 0)
+    (uuid d2b25e79-517c-4e5f-8026-bad577a3bfea)
   )
   (junction (at 111.76 147.32) (diameter 0) (color 0 0 0 0)
     (uuid de164dd6-30b7-4243-934c-d1de04e8647a)
@@ -728,6 +734,10 @@
   (wire (pts (xy 212.09 107.315) (xy 209.55 107.315))
     (stroke (width 0) (type default))
     (uuid 13a94961-f5a9-4913-a736-2439991290d9)
+  )
+  (wire (pts (xy 108.585 69.215) (xy 108.585 95.885))
+    (stroke (width 0) (type default))
+    (uuid 14b63b9a-5965-411f-a7ff-973b13abc194)
   )
   (wire (pts (xy 146.05 147.32) (xy 140.335 147.32))
     (stroke (width 0) (type default))
@@ -949,6 +959,10 @@
     (stroke (width 0) (type default))
     (uuid 9c3ab569-8c56-442f-8974-b15fdfec745f)
   )
+  (wire (pts (xy 181.61 69.215) (xy 181.61 95.885))
+    (stroke (width 0) (type default))
+    (uuid 9ca69803-f427-4cde-b13b-9006f5972af9)
+  )
   (wire (pts (xy 55.88 86.36) (xy 55.88 88.9))
     (stroke (width 0) (type default))
     (uuid a2f62f98-8d81-4042-901d-34e055fd6bfb)
@@ -996,6 +1010,10 @@
   (wire (pts (xy 125.73 95.885) (xy 116.84 95.885))
     (stroke (width 0) (type default))
     (uuid bd68af11-cee8-402d-acf8-019c404b6a3a)
+  )
+  (wire (pts (xy 128.905 69.215) (xy 108.585 69.215))
+    (stroke (width 0) (type default))
+    (uuid c06d55d5-e2b8-44dd-827f-e1506c9adc2d)
   )
   (wire (pts (xy 58.42 88.9) (xy 71.12 88.9))
     (stroke (width 0) (type default))
@@ -1057,6 +1075,10 @@
     (stroke (width 0) (type default))
     (uuid f69a9f77-e369-4e7b-8f26-485cc4b420ec)
   )
+  (wire (pts (xy 131.445 69.215) (xy 181.61 69.215))
+    (stroke (width 0) (type default))
+    (uuid faa847fb-084b-4aa3-af53-e997a98106ed)
+  )
   (wire (pts (xy 140.335 147.32) (xy 140.335 159.385))
     (stroke (width 0) (type default))
     (uuid fe85e37b-81a9-4ef0-9f26-a5dec8813631)
@@ -1066,7 +1088,7 @@
     (uuid ffdf0c34-ba10-4093-91cb-78361f1bb487)
   )
 
-  (text "Use JLCPCB connector: C319134\nhttps://jlcpcb.com/partdetail/XkbConnectivity-DC_005_5A_2_0SMT/C319134\n\n10R: C17903\n\n1R: C164030\n\n0R1: C25334\n\n\nTest Point: C2906762\n\n\nSocket Banana Green: C7437324\nSocket Banana Red: C7437321\n\nPlug Banana Black: C179488\nPlug Banana Red:C179487\n\nBanana Binding Post Red: C106273"
+  (text "Use JLCPCB Parts Where Possible\n\nPanel Mounting DC Power Receptacle: C319134\n\n10R: C17903\n1R: C164030\n0R1: C25334\n\nTest Point: C2906762\n\nSocket Banana Green: C7437324\nSocket Banana Red: C7437321\n\nPlug Banana Black: C179488\nPlug Banana Red:C179487\n\nBanana Binding Post Red: C106273\nBanana Binding Post Green: ????\nBanana Binding Post Yellow: C309375\nBanana Binding Post Black: C106272"
     (at 50.165 53.34 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 094a1651-0861-4c4e-aef1-1ef7873e1218)
@@ -1139,7 +1161,7 @@
   (symbol (lib_id "Connector:Conn_01x02_Socket") (at 213.36 72.39 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2a530d93-8856-442c-942c-99850c2aaebd)
-    (property "Reference" "J6" (at 217.17 71.755 90)
+    (property "Reference" "J7" (at 217.17 71.755 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Banana Red" (at 217.17 74.295 90)
@@ -1162,7 +1184,7 @@
     (instances
       (project "CurrentMonitor"
         (path "/c2625580-5dc2-4487-938a-c703153fa89f"
-          (reference "J6") (unit 1)
+          (reference "J7") (unit 1)
         )
       )
     )
@@ -1171,7 +1193,7 @@
   (symbol (lib_id "power:GND") (at 71.12 120.015 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 37cfd2b0-2f2f-45eb-be22-b8854560be06)
-    (property "Reference" "#PWR01" (at 71.12 126.365 0)
+    (property "Reference" "#PWR02" (at 71.12 126.365 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 71.12 124.46 0)
@@ -1187,7 +1209,7 @@
     (instances
       (project "CurrentMonitor"
         (path "/c2625580-5dc2-4487-938a-c703153fa89f"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR02") (unit 1)
         )
       )
     )
@@ -1313,7 +1335,7 @@
       )
       (project "CurrentMonitor"
         (path "/c2625580-5dc2-4487-938a-c703153fa89f"
-          (reference "#FLG01") (unit 1)
+          (reference "#FLG02") (unit 1)
         )
       )
     )
@@ -1463,7 +1485,7 @@
   (symbol (lib_id "Connector_Generic:Conn_02x03_Odd_Even") (at 160.655 130.175 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5a290e0b-c00b-4e39-a8f1-c30e44647d33)
-    (property "Reference" "J5" (at 161.925 121.92 0)
+    (property "Reference" "J6" (at 161.925 121.92 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_02x03_Odd_Even" (at 161.925 124.46 0)
@@ -1490,7 +1512,7 @@
     (instances
       (project "CurrentMonitor"
         (path "/c2625580-5dc2-4487-938a-c703153fa89f"
-          (reference "J5") (unit 1)
+          (reference "J6") (unit 1)
         )
       )
     )
@@ -1560,7 +1582,7 @@
   (symbol (lib_id "Connector:Screw_Terminal_01x02") (at 219.075 138.43 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 642605bd-7062-4b3b-bfdf-e0af2a3f54e7)
-    (property "Reference" "J8" (at 219.075 144.145 0)
+    (property "Reference" "J9" (at 219.075 144.145 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Screw_Terminal_01x02" (at 219.075 141.605 0)
@@ -1583,7 +1605,7 @@
     (instances
       (project "CurrentMonitor"
         (path "/c2625580-5dc2-4487-938a-c703153fa89f"
-          (reference "J8") (unit 1)
+          (reference "J9") (unit 1)
         )
       )
     )
@@ -1592,7 +1614,7 @@
   (symbol (lib_id "PubInv_KiCad_SCH_LIB:Barrel_Jack_Switch_SMT") (at 219.71 107.315 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6ae7c368-03fb-4f8a-bd64-efaace18b23a)
-    (property "Reference" "J9" (at 219.71 94.615 0)
+    (property "Reference" "J10" (at 219.71 94.615 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Barrel_Jack_Switch_SMT" (at 219.71 97.155 0)
@@ -1635,7 +1657,7 @@
     (instances
       (project "CurrentMonitor"
         (path "/c2625580-5dc2-4487-938a-c703153fa89f"
-          (reference "J9") (unit 1)
+          (reference "J10") (unit 1)
         )
       )
     )
@@ -1644,7 +1666,7 @@
   (symbol (lib_id "power:GND") (at 204.47 92.075 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6c2e384b-f450-4164-9900-051d9968a2bf)
-    (property "Reference" "#PWR06" (at 204.47 98.425 0)
+    (property "Reference" "#PWR04" (at 204.47 98.425 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 204.47 96.52 0)
@@ -1660,7 +1682,7 @@
     (instances
       (project "CurrentMonitor"
         (path "/c2625580-5dc2-4487-938a-c703153fa89f"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -1669,7 +1691,7 @@
   (symbol (lib_id "power:GND") (at 209.55 118.745 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 71c3edcb-043a-4b42-a3aa-43098d428f66)
-    (property "Reference" "#PWR02" (at 209.55 125.095 0)
+    (property "Reference" "#PWR05" (at 209.55 125.095 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 209.55 123.19 0)
@@ -1685,7 +1707,39 @@
     (instances
       (project "CurrentMonitor"
         (path "/c2625580-5dc2-4487-938a-c703153fa89f"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR05") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:Screw_Terminal_01x02") (at 131.445 64.135 270) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 7997ef89-ee76-48d2-895b-c8a65d0a2a13)
+    (property "Reference" "J5" (at 137.16 64.135 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "Screw_Terminal_01x02" (at 134.62 64.135 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 131.445 64.135 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 131.445 64.135 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Distributor 1" "JLCPCB" (at 131.445 64.135 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Distributor 1 PN" "C8385" (at 131.445 64.135 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 9471741e-215c-46d2-a8d9-68bde97728e2))
+    (pin "2" (uuid 4c7f9e67-8dd4-40d2-9257-0048ebb2a2f3))
+    (instances
+      (project "CurrentMonitor"
+        (path "/c2625580-5dc2-4487-938a-c703153fa89f"
+          (reference "J5") (unit 1)
         )
       )
     )
@@ -1778,7 +1832,7 @@
       )
       (project "CurrentMonitor"
         (path "/c2625580-5dc2-4487-938a-c703153fa89f"
-          (reference "#FLG02") (unit 1)
+          (reference "#FLG01") (unit 1)
         )
       )
     )
@@ -1911,7 +1965,7 @@
   (symbol (lib_id "power:GND") (at 71.12 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid df812b67-ea39-430d-88cb-d188aa6f2a1d)
-    (property "Reference" "#PWR05" (at 71.12 95.25 0)
+    (property "Reference" "#PWR01" (at 71.12 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 71.12 93.345 0)
@@ -1927,7 +1981,7 @@
     (instances
       (project "CurrentMonitor"
         (path "/c2625580-5dc2-4487-938a-c703153fa89f"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR01") (unit 1)
         )
       )
     )
@@ -1936,7 +1990,7 @@
   (symbol (lib_id "Connector:Conn_01x02_Socket") (at 213.36 83.185 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e83160e1-7152-4fdc-9492-57b84729268e)
-    (property "Reference" "J7" (at 217.17 82.55 90)
+    (property "Reference" "J8" (at 217.17 82.55 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Banana Green" (at 217.17 85.09 90)
@@ -1956,7 +2010,7 @@
     (instances
       (project "CurrentMonitor"
         (path "/c2625580-5dc2-4487-938a-c703153fa89f"
-          (reference "J7") (unit 1)
+          (reference "J8") (unit 1)
         )
       )
     )
@@ -1965,7 +2019,7 @@
   (symbol (lib_id "power:GND") (at 209.55 149.225 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f039a200-8eae-432f-842f-8cc7921c80e7)
-    (property "Reference" "#PWR04" (at 209.55 155.575 0)
+    (property "Reference" "#PWR06" (at 209.55 155.575 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 209.55 153.67 0)
@@ -1981,7 +2035,7 @@
     (instances
       (project "CurrentMonitor"
         (path "/c2625580-5dc2-4487-938a-c703153fa89f"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
