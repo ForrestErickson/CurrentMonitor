@@ -9,5 +9,5 @@ JLC-Plugin-for-KiCad schematic Fabrication from:  https://github.com/bennymeg/JL
 KiCad-DesignRules method from: https://github.com/labtroll/KiCad-DesignRules?tab=readme-ov-file
 
 ## License and Warranty
-License: This project and files are dedicated and released to the public domain.
+License: This project and files are dedicated and released to the public domain.  
 Warranty: This project and files are designed to kill you and render the earth uninhabitible, however they not guarenteed to do so.
